@@ -1,0 +1,205 @@
+body {
+    /* フォントをsans-serifに設定 */
+    font-family: sans-serif;
+    /* 行の高さを1.6倍に設定、ブラウザのデフォルトの行の高さを削除 */
+    line-height: 1.6;
+    /* 外側の余白を0に設定、ブラウザのデフォルトの余白を削除 */
+    margin: 0;
+    /* 内側の余白を0に設定、ブラウザのデフォルトの余白を削除 */
+    padding: 0;
+    /* 背景色を薄いグレーに設定 */
+    background-color: #f4f4f4;
+}
+
+header {
+    /* 背景色を濃いグレーに設定 */
+    background-color: #333;
+    /* テキスト色を白に設定 */
+    color: white;
+    /* 内側の余白を5pxに設定 */
+    padding: 5px;
+    /* テキストを中央揃えに設定 */
+    text-align: center;
+    margin: 10px;
+}
+
+main {
+    /* 最大幅を800pxに設定 */
+    max-width: 800px;
+    /* 上下のマージンを20px、左右のマージンを自動に設定 */
+    margin: 20px auto;
+    /* 内側の余白を20pxに設定 */
+    padding: 10px;
+    /* 背景色を白に設定 */
+    background-color: white;
+    /* 薄い影を追加 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    /* セクションの下部マージンを20pxに設定 */
+    margin-bottom: 5px;
+}
+
+div {
+    margin: 0px 10px;
+}
+
+
+h1 {
+    /* 背景色を濃いグレーに設定 */
+    background-color: #333;
+    /* テキスト色を白に設定 */
+    color: white;
+    /* 内側の余白を5pxに設定 */
+    padding: 5px;
+    /* テキストを中央揃えに設定 */
+    text-align: center;
+    /* フォントをcursiveに設定 */
+    font-family: cursive;
+    /* 見出しの下部マージンを0 */
+    margin: 0;
+}
+
+h2 {
+    /* 見出しの下部マージンを5pxに設定 */
+    margin: 5px;
+}
+
+.goalList {
+    /* 「目標一覧」リストの非表示 */
+    display: none;
+}
+
+label {
+    /* ラベルをインライン要素からブロック要素として表示、縦並び、幅が親要素の100%、高さや幅が指定できるようになる */
+    display: block;
+    /* ラベルの下部マージンを5pxに設定 */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    /* 幅を100%に設定 */
+    width: 100%;
+    /* 内側の余白を10pxに設定 */
+    padding: 10px;
+    /* 下部のマージンを15pxに設定 */
+    margin-bottom: 15px;
+    /* 境界線をグレーに設定 */
+    border: 1px solid gray;
+    /* 要素の幅と高さにパディングとボーダーが含まれるように設定 */
+    box-sizing: border-box;
+}
+
+.Hobby {
+    /* 基本の背景色は白 */
+    background-color: #ffffff;
+    /* テキスト色を青に設定 */
+    color: #0000ff;
+    /* 境界線を削除 */
+    border: none;
+    font: size 30pt;
+    width: 250px;
+    /* アンダーライン追加*/
+    text-decoration:underline;
+    /* カーソルをポインターに設定 */
+    cursor: pointer;    
+    margin: 0px;
+    text-align: left;
+    font-size: 12pt;
+}
+/* ボタンを押したときの書式変更クラス */
+.CrBtn{
+    font-size:150%;
+    color:white;
+    font-weight: 900;
+    text-decoration:none;
+    background-color:#360239;
+    text-align: center;
+    width: 100%;
+}
+
+button:hover {
+    /* ホバー時の背景色を設定 */
+    background-color: yellowgreen;
+}
+
+/*********　上部メニュー　ナビゲーション　の指定  *********/
+nav {
+    /* ナビゲーションの上部マージンを0pxに設定 */
+    margin-top: 10px;
+}
+    /* リストを横並びにするための書式設定 */
+#mainmenu {
+    display: flex;      /* 横並びできるように、フレックスボックスにする */
+    align-items: flex-start;
+    list-style: none;   /* リストマーカーを消す */
+    padding: 0;         /* ulのデフォルトパディングをリセット */
+    margin-top: 0;
+}
+.menulist {
+    text-align: center;
+    width: 25%;         /* 4つの項目を1行におさめるため */
+    /*border:  1px solid black;*/
+ }
+/* 各リンクの背景色を設定 */
+#btn_menu_si { background-color: #ffffa2;}
+#btn_menu_hs { background-color: #a5ffa2;}
+#btn_menu_mg { background-color: #a2faff;}
+#btn_menu_cm { background-color: #ffa2e0;}
+/* リンクホバー時の背景色を設定
+    同じ色なのでclassで指定しようとしたが、優先度の都合で無視されるため
+    各IDそれぞれへの指定が必要みたい*/
+#btn_menu_si:hover { background-color: yellowgreen;}
+#btn_menu_hs:hover { background-color: yellowgreen;}
+#btn_menu_mg:hover { background-color: yellowgreen;}
+#btn_menu_cm:hover { background-color: yellowgreen;}
+
+
+
+/* 写真のサイズ */
+img {
+    max-width: 800px; height: auto; 
+}
+/*　趣味：コーヒーの写真の配置*/
+#Cafe-image{
+    display:flex
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+    input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.required {
+    color: red;
+}
+
+footer {
+    /* Flexboxを有効化 */
+    display: flex;
+    /* 水平中央寄せ */     
+    justify-content: center;
+    /* テキストを中央揃えに設定 */
+    text-align: center;
+    /* 内側の余白を0pxに設定 */
+    padding: 0px;
+    /* 背景色を濃いグレーに設定 */
+/*    background-color: #c9c9c9;
+    /* テキスト色を白に設定 */
+    color: white;
+    /* 幅を100%に設定 */
+    width: 100%;
+    /* フッターの上部マージンを追加して位置を下げる */
+/*    margin-top: 255px;*/
+}

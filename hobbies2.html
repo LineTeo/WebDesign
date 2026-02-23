@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>趣味と特技</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <main>
+    <header>
+        <h1>訓練生Aのプロフィール</h1>
+    </header>
+        <div id="header">
+            <style>
+            /* 現ページのメニューだけ書式変更*/*
+                /*フォントを黒太字に変更 */
+                #btn_menu_hs {
+                    color:black;
+                    font-weight: 700;
+                    font-size:200%;
+                    background-color:unset;
+                    text-align: left;                
+                }                
+                /*ホバー時に背景色が変わらないようにする */
+                #btn_menu_hs:hover {
+                    background-color:unset;
+                }
+            </style>
+            <nav>
+                <ul id="mainmenu">
+                    <li id="btn_menu_hs" class="menulist">
+                        <a>趣味・特技</a>
+                    </li>
+                    <li id="btn_menu_mg" class="menulist">
+                        <a href="goals2.html">訓練中の目標</a>
+                    </li>
+                    <li id="btn_menu_cm" class="menulist">
+                         <a href="Report.html">演習の感想</a>
+                   </li>
+                    <li id="btn_menu_si" class="menulist">
+                        <a href="Prof2.html">自己紹介</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="Content">
+            <section>
+                <h2>趣味</h2>
+                <button id="btn_h1" class="Hobby">旅行</button><br>
+                <div id="detail_1" >
+                    <p>一番の趣味で、泊まり、日帰り問わず毎年多くのところに訪れています。<br>
+                    昨年は家庭の事情で何度か九州まで帰省したため、それ以外の旅行は少ないですがそれでも泊りがけで沖縄、大阪（万博）、上高地の３回、
+                    日帰りでは館山、箱根、日光、草津、軽井沢をはじめいろいろと出かけています。（下は昨年旅行に行った先で撮ったもの）</p>
+                    <img id="Tr-image" src="photo/Yoshi.png" alt="旅行先の写真">
+                </div>
+                <button  id="btn_h2" class="Hobby">散歩・トレッキング</button><br>
+                <div id="detail_2" >
+                    <p>近所を散歩して回るだけでなく、昨年の上高地のようにトレッキングを目的に旅行することもあります。<br>
+                    また出張時の休日に付近を歩き回ったりします。過去ダブリンに行ったときはホテルからダウンタウンまで10km以上を歩いて往復しました（下の写真）                        </p>
+                    <img id="Dub-image" src="photo/Dub1.png" alt="ダブリンの写真">
+                </div>
+                <button  id="btn_h3" class="Hobby">コーヒー</button><br>
+                <style>
+                    .CafePhoto{ max-width: auto; height: 60px; } 
+                    .CafePhoto:hover{max-width: auto; height: 300px;}
+                </style>
+                <div id="detail_3" >
+                    <div>
+                        <p>単に味や香り好きなだけでなく、食器や抽出の方法、器具にこだわったり、生豆の処理（ナチュラル、ハニー、アナエロビック等）を気にして豆を選んだりしています。<br>
+                        ショップめぐりも好きでしたが、最近はコーヒーの値段が上がってしまい、少し足が遠のいてしまいました。その代わりに自分で焙煎したり、旅行先、散歩先に器具を持ち出して、景色を楽しみながら好きなコーヒーを淹れるなどして楽しんでいます。
+                        </p></div>
+                    <div id="Cafe-image">
+                        <img id="Cafe-image1" class="CafePhoto" src="photo/Cafe1SQ.png" alt="Cafe1">
+                        <img id="Cafe-image2" class="CafePhoto" src="photo/Cafe2SQ.png" alt="cafe2">
+                        <img id="Cafe-image3" class="CafePhoto" src="photo/Cafe3SQ.png" alt="cafe3">
+                        <img id="Cafe-image4" class="CafePhoto" src="photo/Cafe4SQ.png" alt="cafe4">
+                    </div>
+                </div>
+                <h2>特技</h2>
+                <p>特技は特にありません。ただ、学生時代に競技ダンスをやっていたので、もしかしたら社交ダンスは踊れるかも？<br></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a href="contact2.html">お問い合わせ</a>
+    </footer>
+    <script src="script/hobbies2.js"></script>
+</body>
+</html>

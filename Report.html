@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>演習の感想</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <main>
+     <header>
+        <h1>訓練生Aのプロフィール</h1>
+    </header>
+       <div id="header">
+            <style>
+            /* 現ページのメニューだけ書式変更*/*
+                /*フォントを黒太字に変更 */
+                #btn_menu_cm {
+                    color:black;
+                    font-weight: 700;
+                    font-size:200%;
+                    background-color:unset;
+                    text-align: left;                
+                }                
+                /*ホバー時に背景色が変わらないようにする */
+                #btn_menu_cm:hover {
+                    background-color:unset;
+                }
+
+            </style>
+            <nav>
+                <ul id="mainmenu">
+                    <li id="btn_menu_cm" class="menulist">
+                        <a>演習の感想</a>
+                    <li id="btn_menu_si" class="menulist">
+                        <a href="Prof2.html">自己紹介</a>
+                    </li>
+                    <li id="btn_menu_hs" class="menulist">
+                        <a href="hobbies2.html">趣味・特技</a>
+                    </li>
+                    <li id="btn_menu_mg" class="menulist">
+                        <a href="goals2.html">訓練中の目標</a>
+                    </li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <style>
+            #Btn-HTML {
+                position: absolute;
+            }
+            #Btn-JAVA {
+                position: absolute;
+            }
+            main{
+                min-height: 600px;
+            }
+            
+        </style>
+        <section id="Content">
+            <Button id="Btn-HTML" class="Hobby" >HTMLについて</Button><br>
+            <div id="About-H" class="Content">
+                <p>以前HTMLを使ってホームページを作った際は思ったように表示できれば満足していましたが、今回の学習で、例えばnavタグは検索エンジンがサイト構造を理解しやすくするためのタグと知り、見た目だけじゃだめなことが分かりました。<br>
+                ただ、同時に常に正しくタグを使うのは大変で、今回の演習で作ったページもsectionタグとdivタグの使い分けは適当になってしまってる気がします。<br>
+            </p></div>
+
+            <Button id="Btn-JAVA" class="Hobby">CSS、JAVAScriptについて</Button>
+            <div id="About-J" class="Content">
+                <p>これらの単語は知っていましたが、それがどういうものか今回初めて知りました。単純なコードでWebページの表現を結構いろいろ変えることができるのは驚きでした。
+                オブジェクト、プロパティ、メソッドなどはVBAでも経験があってあったのでとっつきやすく、また、基礎的なことをきちんと教えていただいたので、ネットでなにを調べればよいかもわかるようになったため、演習ではいろい試すことができました。
+            </p></div>
+        </section>
+
+    </main>
+    <footer>
+        <a href="contact2.html">お問い合わせ</a>
+    </footer>
+    
+    <script src="script/Report.js"></script>
+</body>
+</html>

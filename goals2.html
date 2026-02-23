@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>訓練期間中の目標</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <main>
+     <header>
+        <h1>訓練生Aのプロフィール</h1>
+    </header>
+       <div id="header">
+            <style>
+            /* 現ページのメニューだけ書式変更*/*
+                /*フォントを黒太字に変更 */
+                #btn_menu_mg {
+                    color:black;
+                    font-weight: 700;
+                    font-size:200%;
+                    background-color:unset;
+                    text-align: left;
+                }                
+                /*ホバー時に背景色が変わらないようにする */
+                #btn_menu_mg:hover {
+                    background-color:unset;
+                }
+
+            </style>
+            <nav>
+                <ul id="mainmenu">
+                    <li id="btn_menu_mg" class="menulist">
+                        <a>目標</a>
+                    </li>
+                    <li id="btn_menu_cm" class="menulist">
+                        <a href="Report.html">演習の感想</a>
+                    </li>
+                    <li id="btn_menu_si" class="menulist">
+                        <a href="Prof2.html">自己紹介</a>
+                    </li>
+                    <li id="btn_menu_hs" class="menulist">
+                        <a href="hobbies2.html">趣味・特技</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="Content">
+            <section>
+            <h2>目標一覧</h2>
+            <button id="toggleGoals">目標一覧を表示</button>
+            <ul class="goalList" id="goalList"> <!-- 初期非表示 -->
+                <li>基本情報技術者試験に合格する</li>
+                <li>Java SE SILVERの資格を取得する</li>
+                <li>Python3エンジニア認定基礎試験に合格する</li>
+                <li>JavaまたはPythonを使ったプロジェクトを完成させる</li>
+                <li>早期就職を目指す</li>
+            </ul>
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a href="contact2.html">お問い合わせ</a>
+    </footer>
+    <script src="script/goals.js"></script>
+</body>
+</html>
